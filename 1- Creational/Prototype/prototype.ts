@@ -18,7 +18,8 @@ you create a set of objects, configured in various ways.
 When you need an object like the one you’ve configured, 
 you just clone a prototype instead of constructing a new object from scratch.
 
-
+Complexity: 1/3
+Popularity: 2/3
 */
 
 namespace PrototypeNamespace {

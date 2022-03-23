@@ -4,6 +4,9 @@ https://refactoring.guru/design-patterns/factory-method
 
 Factory method is a creational design pattern 
 which solves the problem of creating product objects without specifying their concrete classes.
+
+Complexity: 1/3
+Popularity: 3/3
 */
 
 namespace FactoryNamespace {

@@ -14,6 +14,9 @@ In such cases, Adapters make legacy code work with modern classes.
 Adapter is recognizable by a constructor which takes an instance of a different abstract/interface type. 
 When the adapter receives a call to any of its methods, it translates parameters to the appropriate format 
 and then directs the call to one or several methods of the wrapped object.
+
+Complexity: 1/3
+Popularity: 3/3
 */
 
 namespace AdapterNamespace {

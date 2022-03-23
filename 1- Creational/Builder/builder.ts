@@ -13,6 +13,9 @@ It’s especially useful when you need to create an object with lots of possible
 Identification: 
 The Builder pattern can be recognized in a class, which has a single creation method and several methods to configure the resulting object. 
 Builder methods often support chaining (for example, someBuilder.setValueA(1).setValueB(2).create()).
+
+Complexity: 2/3
+Popularity: 3/3
 */
 
 namespace BuilderNamespace {

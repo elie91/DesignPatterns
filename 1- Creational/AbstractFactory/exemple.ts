@@ -1,3 +1,15 @@
+/*
+
+https://refactoring.guru/design-patterns/abstract-factory
+
+Abstract Factory is a creational design pattern
+which solves the problem of creating entire product families without specifying their concrete classes.
+
+Complexity: 2/3
+Popularity: 3/3
+
+*/
+
 namespace AbstractFactoryExoNamespace {
 
   interface Chair {
