@@ -71,6 +71,7 @@ namespace BridgeExoNamespace {
     }
   }
 
+  //Concrete Implementation
   class TV implements Device {
     isEnabled(): boolean {
       throw new Error("Method not implemented.");
@@ -96,6 +97,7 @@ namespace BridgeExoNamespace {
 
   }
 
+  //Concrete Implementation
   class Radio implements Device {
     isEnabled(): boolean {
       throw new Error("Method not implemented.");

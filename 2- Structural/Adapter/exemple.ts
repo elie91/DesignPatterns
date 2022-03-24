@@ -20,18 +20,21 @@ Popularity: 3/3
 */
 namespace AdapterExempeNamespace {
 
+  //External package working only with XML
   class CoreClass {
     public displayXML(xmlContent: string): string {
       return `CoreClass: I Work only with XML: ${xmlContent}`
     }
   }
 
+  // Our library working with json
   class AnalyticsLibrary {
     public displayJSON(jsonContent: string): string {
       return `AnalyticsLibrary: I display only JSON : ${jsonContent}`;
     }
   }
 
+  // Adapter => extends CoreClass
   class XMLToJSONAdapter extends CoreClass {
     private library: AnalyticsLibrary;
 
