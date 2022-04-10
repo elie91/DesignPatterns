@@ -5,6 +5,18 @@ https://refactoring.guru/design-patterns/abstract-factory
 Abstract Factory is a creational design pattern
 which solves the problem of creating entire product families without specifying their concrete classes.
 
+-> Use the Abstract Factory when your code needs to work with various families of related products, 
+but you don’t want it to depend on the concrete classes of those products; 
+they might be unknown beforehand or you simply want to allow for future extensibility. 
+
+Usage examples: 
+The Abstract Factory pattern is pretty common in TypeScript code. 
+Many frameworks and libraries use it to provide a way to extend and customize their standard components.
+
+Identification: 
+The pattern is easy to recognize by methods, which return a factory object. 
+Then, the factory is used for creating specific sub-components.
+
 Complexity: 2/3
 Popularity: 3/3
 

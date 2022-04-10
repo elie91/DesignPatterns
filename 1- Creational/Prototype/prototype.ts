@@ -18,6 +18,17 @@ you create a set of objects, configured in various ways.
 When you need an object like the one you’ve configured, 
 you just clone a prototype instead of constructing a new object from scratch.
 
+
+-> Use the Prototype pattern when your code shouldn’t depend on the concrete classes of objects that you need to copy.
+-> Use the pattern when you want to reduce the number of subclasses that only differ in the way they initialize their respective objects. 
+Somebody could have created these subclasses to be able to create objects with a specific configuration.
+
+Usage examples: 
+The Prototype pattern is available in TypeScript out of the box with a JavaScript’s native Object.assign() method.
+
+Identification: 
+The prototype can be easily recognized by a clone or copy methods, etc.
+
 Complexity: 1/3
 Popularity: 2/3
 */
