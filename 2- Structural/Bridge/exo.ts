@@ -11,11 +11,23 @@ of the second hierarchy (Implementation).
 The abstraction will be able to delegate some (sometimes, most) of its calls to the implementations object. 
 Since all implementations will have a common interface, they’d be interchangeable inside the abstraction.
 
-Use the Bridge pattern when you want to divide and organize a monolithic class 
+-> Use the Bridge pattern when you want to divide and organize a monolithic class 
 that has several variants of some functionality (for example, if the class can work with various database servers).
+-> Use the pattern when you need to extend a class in several orthogonal (independent) dimensions.
+-> Use the Bridge if you need to be able to switch implementations at runtime.
+
+Usage examples: 
+The Bridge pattern is especially useful when dealing with cross-platform apps, 
+supporting multiple types of database servers or working with several API providers of a certain kind 
+(for example, cloud platforms, social networks, etc.)
+
+Identification: 
+Bridge can be recognized by a clear distinction between some controlling entity and several different 
+platforms that it relies on.
 
 Complexity: 3/3
 Popularity: 1/3
+
 */
 
 

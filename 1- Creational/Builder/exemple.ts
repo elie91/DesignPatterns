@@ -6,6 +6,11 @@ Builder is a creational design pattern, which allows constructing complex object
 Unlike other creational patterns, Builder doesn’t require products to have a common interface. 
 That makes it possible to produce different products using the same construction process.
 
+-> Use the Builder pattern to get rid of a “telescopic constructor”.
+->  Use the Builder pattern when you want your code to be able to create different representations of some product 
+(for example, stone and wooden houses).
+-> Use the Builder to construct Composite trees or other complex objects.
+
 Usage examples: 
 The Builder pattern is a well-known pattern in TypeScript world. 
 It’s especially useful when you need to create an object with lots of possible configuration options.

@@ -1,3 +1,52 @@
+/*
+
+https://refactoring.guru/design-patterns/proxy
+
+Proxy is a structural design pattern that lets you provide a substitute or placeholder for another object. 
+A proxy controls access to the original object, allowing you to perform something either 
+before or after the request gets through to the original object.
+
+Proxy is a structural design pattern that provides an object that acts as a substitute for a real service object used by a client. 
+A proxy receives client requests, does some work (access control, caching, etc.) 
+and then passes the request to a service object.
+
+The proxy object has the same interface as a service, 
+which makes it interchangeable with a real object when passed to a client.
+
+->  Lazy initialization (virtual proxy). 
+This is when you have a heavyweight service object that wastes system resources by being always up, even though you only need it from time to time.
+->  Access control (protection proxy). 
+This is when you want only specific clients to be able to use the service object; for instance, when your objects are crucial parts of an operating system and clients are various launched applications (including malicious ones).
+-> Local execution of a remote service (remote proxy). 
+This is when the service object is located on a remote server.
+->  Logging requests (logging proxy). 
+This is when you want to keep a history of requests to the service object.
+-> Caching request results (caching proxy). 
+This is when you need to cache results of client requests and manage the life cycle of this cache, especially if results are quite large.
+->  Smart reference. 
+This is when you need to be able to dismiss a heavyweight object once there are no clients that use it.
+
+Résumé: 
+Virtual Proxy
+Protection Proxy
+Remote Proxy
+Loggin Proxy
+Caching Proxy
+Smart Reference
+
+Usage examples: 
+While the Proxy pattern isn’t a frequent guest in most TypeScript applications, it’s still very handy in some special cases. 
+It’s irreplaceable when you want to add some additional behaviors to an object of some existing class 
+without changing the client code.
+
+Identification: 
+Proxies delegate all of the real work to some other object. Each proxy method should, 
+in the end, refer to a service object unless the proxy is a subclass of a service.
+
+Complexity: 2/3
+Popularity: 1/3
+*/
+
 // Caching Proxy
 namespace ProxyExempleNamespace {
 
